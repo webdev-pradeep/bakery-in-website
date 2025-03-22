@@ -10,33 +10,35 @@
     <!-- ////// navbar------- -->
 
     <div
-      class="h-16 w-[100%] bg-black fixed z-50 text-white flex justify-between items-center md:z-50 md:h-16 md:w-[100%] md:bg-black md:text-white md:flex md:justify-between md:items-center md:fixed md:pl-6 md:pr-6"
+      class="h-16 w-[100%] bg-black fixed z-50 text-white flex justify-between items-center md:z-50 md:h-16 md:w-[100%] md:bg-cyan-950 md:text-white md:flex md:justify-between md:items-center md:fixed md:pl-6 md:pr-6"
     >
-      <img
-        src=".//assets/Group 2.png"
-        class="h-[100%] object-contain md:h-[100%] md:object-contain"
-        alt=""
-      />
+      <a href="#video">
+        <img
+          src=".//assets/Group 2.png"
+          class="h-[100%] object-contain md:h-[100%] md:object-contain"
+          alt=""
+        />
+      </a>
       <ol class="md:flex md:gap-4 h-[100%] md:items-center hidden">
         <li
           class="md:text-2xl md:font-serif md:hover:bg-white md:hover:text-black md:hover:p-1 md:hover:rounded-lg"
         >
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li
           class="md:text-2xl md:font-serif md:hover:bg-white md:hover:text-black md:hover:p-1 md:hover:rounded-lg"
         >
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li
           class="md:text-1xl md:text-white md:font-bold md:font-serif md:hover:bg-white md:hover:text-black md:hover:p-1 md:hover:rounded-lg"
         >
-          <a href="#" class="">OursHop</a>
+          <a href="#ourshop" class="">OursHop</a>
         </li>
         <li
           class="md:text-2xl md:font-serif md:hover:bg-white md:hover:text-black md:hover:p-1 md:hover:rounded-lg"
         >
-          <a href="#">F.AQ</a>
+          <a href="#faq">F.AQ</a>
         </li>
       </ol>
       <div class="h-[100%] md:flex md:items-center hidden">
@@ -62,18 +64,24 @@
           src="./assets/🦆 icon _cart outline_.png"
           class="object-contain cursor-pointer md:object-contain md:cursor-pointer"
         />
-        <div class="flex md:w-[100%] md:flex md:justify-center md:items-center">
-          <p>Login..</p>
-          <img
-            src="./assets/🦆 icon _person circle outline_.png"
-            class="object-contain cursor-pointer md:object-contain md:cursor-pointer"
-          />
-        </div>
+        <a href="#login-page">
+          <div
+            class="flex md:w-[100%] md:flex md:justify-center md:items-center"
+          >
+            <p>Login..</p>
+
+            <img
+              src="./assets/🦆 icon _person circle outline_.png"
+              class="object-contain cursor-pointer md:object-contain md:cursor-pointer"
+            />
+          </div>
+        </a>
       </div>
     </div>
     <!-- ////// navbar-end------ -->
 
     <div
+      id="home"
       class="w-[100%] h-[100%] bg-linear-to-r from-pink-500 to-pink-200 pt-[80px] md:bg-linear-to-r md:from-pink-500 md:to-pink-200 md:text-white md:flex md:justify-center md:items-center md:h-[100%] md:w-[100%]"
     >
       <div
@@ -118,7 +126,9 @@
     <hr class="text-yellow-400 m-2 md:m-2 md:text-yellow-400" />
 
     <!-- --------- -->
+
     <div
+      id="about"
       class="w-[100%] h-[100%] bg-linear-to-r from-pink-500 to-pink-200 md:w-[100%] md:bg-linear-to-r md:from-pink-500 md:to-pink-200"
     >
       <h1
@@ -265,6 +275,7 @@
 
     <!-- --------video---- -->
     <video
+      id="video"
       class="h-[300px] w-[100%] bg-linear-to-r from-pink-500 to-pink-200 md:w-[100%] md:h-[500px] md:bg-linear-to-r md:from-pink-500 md:to-pink-200"
       controls
       autoplay
@@ -302,6 +313,7 @@
 
     <!-- footer -->
     <div
+      id="login-page"
       class="w-[100%] h-[100%] grid p-4 justify-center items-center bg-linear-to-r from-pink-500 to-pink-200 md:w-[100%] md:h-[100%] md:flex md:justify-center md:items-center md:gap-16 md:bg-linear-to-r md:from-pink-600 md:to-pink-200"
     >
       <form
@@ -339,5 +351,8 @@
         class="w-[100%] object-contain md:w-[500px] md:object-contain"
       />
     </div>
+
+    <!-- main-js -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
